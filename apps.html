@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Apps</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            (function() 
+            { 
+                window.onload = init;
+                function init()
+                {
+                    var element = document.getElementById("mainmenu");
+                    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+                        element.classList.add("mobile");
+                    else
+                        element.classList.add("desktop");
+                }
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="title">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div id="main">
+            <ul id="mainmenu">
+                <li><a href="apps.html">Apps</a></li>
+                <li><a href="gists.html">Gists</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div id="tabs">
+                <div class="first">
+                    <h1>Featured apps</h1>
+                    <p>This is where featured apps will go.</p>
+                    <p>As there are currently no apps, there are no featured apps!</p>
+                    <p>Check back soon for more apps.</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </body>
+</html>
